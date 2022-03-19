@@ -1,0 +1,89 @@
+.footer {
+    background-color: #F1EADC;
+    a {
+        color: black;
+        text-decoration: none;
+        transition: .3s ease;
+        &:hover {
+            color: #6E9C9F;
+        }
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 90px 0;
+        @media screen and (max-width: 850px) {
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 0;
+            * {
+                margin: 15px 0;
+            }
+        }
+        &-left {
+            &-top {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                @media screen and (max-width: 850px) {
+                    justify-content: center;
+                }
+                span {
+                    margin-left: 25px;
+                    font-size: 19px;
+                    font-weight: 500;
+                }
+            }
+            &-bottom {
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                * {
+                    margin: 6px 0;
+                }
+                @media screen and (max-width: 850px) {
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+        &-middle {
+            &-top {
+                * {
+                    margin: 0 10px;
+                    @media screen and (max-width: 350px) {
+                        margin: 0 5px;
+                    }
+                }
+            }
+        }
+        &-right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            @media screen and (max-width: 850px) {
+                justify-content: center;
+                align-items: center;
+            }
+            * {
+                margin: 5px 0;
+            }
+            #footer-phone {
+                margin-top: 0;
+                margin-bottom: 5px;
+            }
+            #footer-mail {
+                font-size: 15px;
+            }
+            .footer-icons {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 15px 0;
+                * {
+                    margin: 0 3px;
+                }
+            }
+        }
+    }
+}

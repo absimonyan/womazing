@@ -1,0 +1,55 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 358px;
+    max-height: 598px;
+    .image_part {
+        position: relative;
+        margin: 0 5px;
+        img {
+            max-height: 478px;
+            max-width: 350px;
+            object-fit: cover;
+            cursor: pointer;
+            margin-right: 10px;
+            width: 100%;
+        }
+    }
+    .product__overlay {
+        margin-right: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-height: 478px;
+        max-width: 350px;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        background-color: rgba($color: #6E9C9F, $alpha: .7);
+        background-size: 100% 100%;
+        transition: .3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            opacity: 1;
+        }
+        a {
+            color: white;
+            cursor: pointer;
+        }
+        * {
+            font-size: 50px;
+        }
+    }
+    span {
+        font-size: 20px;
+        margin: 10px 0 6px 0;
+    }
+    p {
+        font-size: 15px;
+        color: #998E78;
+    }
+}
